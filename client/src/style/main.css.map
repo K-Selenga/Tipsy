@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;ACFE,AAAD,WAAQ,CAAC;EACP,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,KAAK,EAAE,GAAG;CAKX;;AAJE,AAAD,gBAAM,CAAC;EAEL,UAAU,EAAE,IAAI;CACjB",
+    "sources": [
+        "main.scss",
+        "partials/Row.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

@@ -1,12 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
-
+import "./style/main.css";
+import React from "react";
+import Row from "./components/Row";
+import requests from "./request";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>LEtS PARRRTTTYYYY</h1>
-      </header>
+      <h1>5 de uyu</h1>
+      <Row title="Popular Drinks" fetchUrl={requests.fetchTrend} />
+      <Row title="Random Drinks" fetchUrl={requests.fetchRandom} />
     </div>
   );
 }

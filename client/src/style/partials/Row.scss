@@ -1,0 +1,12 @@
+.row {
+  &__thumb {
+    display: flex;
+    flex-direction: row;
+    &--img {
+      object-fit: contain;
+      width: 90%;
+      max-height: 100px;
+      offset: hidden;
+    }
+  }
+}
