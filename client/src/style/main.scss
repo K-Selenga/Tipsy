@@ -1,5 +1,14 @@
 * {
+  max-width: 100%;
   margin: 0;
   padding: 0;
+  font-family: system-ui;
+  color: rgba(245, 245, 245, 0.747);
+  //   height: 2000px;
 }
+// .App {
+//   background-color: #111111;
+// }
 @import "./partials/Row";
+@import "./partials/Banner";
+@import "./partials/Nav";

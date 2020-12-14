@@ -1,0 +1,40 @@
+.row {
+  background-color: #333333;
+  &__title {
+    padding-left: 1rem !important;
+    padding-top: 1%;
+  }
+  &__thumb {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 1rem;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &--img {
+      object-fit: contain;
+      width: 80%;
+      max-height: 5rem;
+      margin-right: 0.5rem;
+      transition: transform 450ms;
+      opacity: 0.75;
+      &:hover {
+        transform: scale(1.12);
+        opacity: 1;
+      }
+      &-l {
+        max-height: 9rem;
+        margin: 0;
+        transition: transform 450ms;
+        opacity: 0.85;
+        &:hover {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

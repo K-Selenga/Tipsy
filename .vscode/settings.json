@@ -1,4 +1,12 @@
 {
     "npm.enableRunFromFolder": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "emmet.triggerExpansionOnTab": true,
+"emmet.includeLanguages": {
+    "javascript": "javascript",
+    "vue-html": "html",
+    "php": "html",
+    "blade": "html",
+}
+
 }
