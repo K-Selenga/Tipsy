@@ -1,7 +1,6 @@
 import React from "react";
-
 function CocktailDetails() {
-  return <div></div>;
+  return <div className="Details"></div>;
 }
 
 export default CocktailDetails;

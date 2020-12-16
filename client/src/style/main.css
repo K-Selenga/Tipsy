@@ -280,4 +280,53 @@
 .nav__black {
   color: black;
 }
+
+.new__bg {
+  margin-left: -10rem;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+.new__form {
+  margin-left: 50%;
+}
+
+.new__form--btn {
+  background-color: black;
+}
+
+.new__form--title {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 500;
+}
+
+.new__form--name {
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.new__form--name-i {
+  margin: 0;
+}
+
+.new__forming-1 {
+  margin: 0;
+}
+
+.fav {
+  background-color: black;
+}
+
+.fav__poster {
+  max-width: 20vw;
+}
+
+.fav__name {
+  color: whitesmoke;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,9 @@
+.fav {
+  background-color: black;
+  &__poster {
+    max-width: 20vw;
+  }
+  &__name {
+    color: whitesmoke;
+  }
+}
