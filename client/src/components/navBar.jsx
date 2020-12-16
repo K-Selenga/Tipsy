@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Logo from "../Assets/LogoW.png";
-import { GiBabyBottle } from "react-icons/gi";
 
 function NavBar() {
-  const [show, handleShow] = useState(false);
+  //   const [show, handleShow] = useState(false);
 
   // Scrolldown effect bar appears nah, i changed my mind
   //  useEffect(() => {
@@ -20,7 +19,6 @@ function NavBar() {
   return (
     <div className="nav">
       <img src={Logo} alt="White Logo Tipsy" className="nav__logo" />
-      <img src={GiBabyBottle} alt="" className="nav__baby" />
     </div>
   );
 }

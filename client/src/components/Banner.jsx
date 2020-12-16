@@ -38,31 +38,36 @@ function Banner() {
         </div>
         <p className="banner__contents--inst-i">
           Ingredients:
-          {cocktails.strIngredient1}
-          {cocktails.strIngredient2}
-          {cocktails.strIngredient3}
-          {cocktails.strIngredient4}
-          {cocktails.strIngredient5}
-          {cocktails.strIngredient6}
+          <br />
+          {cocktails.strMeasure1} {cocktails.strIngredient1} <br />
+          {cocktails.strMeasure2} {cocktails.strIngredient2}
+          <br />
+          {cocktails.strMeasure3} {cocktails.strIngredient3}
+          <br />
+          {cocktails.strMeasure4} {cocktails.strIngredient4}
+          <br />
+          {cocktails.strMeasure5} {cocktails.strIngredient5}
+          <br />
+          {cocktails.strMeasure6} {cocktails.strIngredient6}
         </p>
         <p className="banner__contents--inst">
           {truncate(cocktails.strInstructions, 180)}
         </p>
       </div>
-      <div>
+      <div className="try">
+        <div className="banner__fadeBottom" />
         <video
           className="banner__video"
           autoPlay
           loop
           muted
-          style={{
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-          }}
+          // style={{
+          //   backgroundSize: "cover",
+          //   backgroundPosition: "center center",
+          // }}
         >
           <source src={BannerMov} type="video/mp4" />
         </video>
-        <div className="banner__fadeBottom" />
       </div>
     </header>
   );

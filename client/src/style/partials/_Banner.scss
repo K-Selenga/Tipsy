@@ -12,35 +12,44 @@
   transition: all 0.2s;
   z-index: 101;
 }
-
+.try {
+  height: 21rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
 .banner {
-  background-color: #333333c0;
-  object-fit: contain;
-  max-height: 13rem;
-  &__fadeBottom {
-    position: relative;
-    margin-top: -2rem;
-    height: 2rem;
-    background-image: linear-gradient(180deg, transparent, #333333d0, #333333);
-    z-index: 100;
-  }
+  //background-color: #333333c0;
+  //object-fit: contain;
+  //max-height: 13rem;
+  // &__fadeBottom {
+  //   position: absolute;
+  //   bottom: 0rem;
+  //   height: 10rem;
+  //   z-index: 900 !important;
+  // }
   &__video {
+    object-fit: fill;
+
     position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 30rem;
-    background-position: center;
+    top: 0;
+    // margin-left: -10rem;
+    width: 100%;
+    //overflow: hidden;
+    height: 100%;
+    //background-position: center;
+    z-index: -99;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   &__contents {
-    padding-top: 1.1rem;
+    padding-top: 10vh;
     margin-left: 1rem;
     z-index: 99;
     height: 4rem;
     position: absolute;
     &--title {
       max-width: 9rem;
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: 800;
       padding-bottom: 0.3rem;
       &:hover {
@@ -49,6 +58,7 @@
     }
 
     &--inst {
+      // margin-top: 3vh;
       width: 15rem;
       line-height: 1;
       padding-top: 0.5rem;
@@ -56,13 +66,18 @@
       max-width: 18rem;
       height: 3rem;
       &:hover {
+        width: 100%;
         color: rgba(245, 245, 245, 1);
+        background-color: #333333be;
+        z-index: 200;
       }
       &-i {
+        margin-top: 3vh;
         width: 17rem;
         line-height: 1.1rem;
         max-width: 18rem;
         font-size: 0.7rem;
+        font-weight: 500;
         padding-top: 0.1rem;
         font-size: 1rem;
         color: rgba(245, 245, 245, 1);
