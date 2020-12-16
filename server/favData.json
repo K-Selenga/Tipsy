@@ -1,5 +1,5 @@
-{
-    "favdrinks": [
+
+     [
         {
             "idDrink": "17196",
             "strDrink": "Cosmopolitan",
@@ -82,4 +82,3 @@
             "strMeasure5": null
         }
     ]
-}

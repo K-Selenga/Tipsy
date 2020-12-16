@@ -3,18 +3,41 @@ import BG from "../Assets/bcaesar.jpeg";
 import axios from "../axios";
 
 class NewCocktail extends Component {
-  state = {
-    strDrink: "",
-    strIngredient1: "",
-    strIngredient2: "",
-    strIngredient3: "",
-    strIngredient4: "",
-    strIngredient5: "",
-    strInstructions: "",
-  };
-  handleSubmit() {
-    console.log("New Cocktail has been added");
+  constructor(props) {
+    super(props);
+    this.state = {
+      idDrink: null,
+      strDrink: "",
+      strIngredient1: "",
+      strIngredient2: "",
+      strIngredient3: "",
+      strIngredient4: "",
+      strIngredient5: "",
+      strInstructions: "",
+      strMeasure1: "1 oz ",
+      strMeasure2: "3/4 oz ",
+      strMeasure3: null,
+      strMeasure4: null,
+      strMeasure5: null,
+    };
+    this.handleChange = this.handleChange.bind(this);
   }
+  handleChange(event) {
+    this.setState({ strDrink: event.target.strDrink });
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("New Cocktail has been added");
+    axios
+      .post("http://localhost:5000/addCocktail", this.state)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log("error:", error);
+      });
+  };
 
   render() {
     return (
@@ -26,14 +49,16 @@ class NewCocktail extends Component {
           <form onSubmit={this.handleSubmit} className="new__form">
             <label htmlFor="strDrink" className="new__form--name">
               Name
+              <br />
+              <input
+                name="strDrink"
+                placeholder="Bloody Caesar"
+                type="text"
+                onChange={this.handleChange}
+                value={this.state.strDrink}
+                className="new__form--name-i"
+              />
             </label>
-            <br />
-            <input
-              name="strDrink"
-              placeholder="Bloody Caesar"
-              type="text"
-              className="new__form--name-i"
-            />
             <br />
 
             <label htmlFor="strIngredient1" className="new__form--name">
@@ -42,7 +67,11 @@ class NewCocktail extends Component {
             <br />
             <input
               name="strIngredient1"
+              onChange={this.handleChange}
+              value={this.state.strIngredient1}
               placeholder="Vodka"
+              rows="10"
+              cols="50"
               type="text"
               className="new__form--ing-1"
             />
@@ -53,6 +82,8 @@ class NewCocktail extends Component {
             <br />
             <input
               name="strIngredient2"
+              onChange={this.handleChange}
+              value={this.state.strIngredient2}
               placeholder="Tabasco"
               type="text"
               className="new__form--ing-2"
@@ -64,6 +95,8 @@ class NewCocktail extends Component {
             <br />
             <input
               name="strIngredient3"
+              onChange={this.handleChange}
+              value={this.state.strIngredient3}
               placeholder="Horseradish"
               type="text"
               className="new__form--ing-3"
@@ -76,6 +109,8 @@ class NewCocktail extends Component {
             <input
               name="strIngredient4"
               placeholder="Clamato Juice"
+              onChange={this.handleChange}
+              value={this.state.strIngredient4}
               type="text"
               className="new__form--ing-4"
             />
@@ -87,6 +122,8 @@ class NewCocktail extends Component {
             <input
               name="strIngredient5"
               placeholder="Worcestershire Sauce"
+              onChange={this.handleChange}
+              value={this.state.strIngredient5}
               type="text"
               className="new__form--ing-5"
             />
@@ -99,6 +136,8 @@ class NewCocktail extends Component {
               name="strInstructions"
               placeholder="Rub the rim of the glass with the lime slice to make the salt stick to it. Rim the glass with celery salt, fill it with ice. Add 2 onz wodka, dash of horseradish, 3-4 splash Tabasco & Worcestershire sauce and fill with clamato juice. Garnish with anything savory (bacon, celery stick, pickle, parsley etc.)."
               type="text"
+              onChange={this.handleChange}
+              value={this.state.strInstructions}
               className="new__form--inst"
             />
             <br />
