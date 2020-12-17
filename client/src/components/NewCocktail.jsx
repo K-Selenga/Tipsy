@@ -8,14 +8,15 @@ class NewCocktail extends Component {
     this.state = {
       idDrink: null,
       strDrink: "",
+      strDrinkThumb: "",
       strIngredient1: "",
       strIngredient2: "",
       strIngredient3: "",
       strIngredient4: "",
       strIngredient5: "",
       strInstructions: "",
-      strMeasure1: "1 oz ",
-      strMeasure2: "3/4 oz ",
+      strMeasure1: " ",
+      strMeasure2: " ",
       strMeasure3: null,
       strMeasure4: null,
       strMeasure5: null,
@@ -23,7 +24,7 @@ class NewCocktail extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(event) {
-    this.setState({ strDrink: event.target.strDrink });
+    this.setState({ [event.target.name]: event.target.value });
   }
 
   handleSubmit = (event) => {
@@ -63,19 +64,18 @@ class NewCocktail extends Component {
 
             <label htmlFor="strIngredient1" className="new__form--name">
               1st Ingredient
+              <br />
+              <input
+                name="strIngredient1"
+                onChange={this.handleChange}
+                value={this.state.strIngredient1}
+                placeholder="Vodka"
+                type="text"
+                className="new__form--ing-1"
+              />
+              <br />
             </label>
-            <br />
-            <input
-              name="strIngredient1"
-              onChange={this.handleChange}
-              value={this.state.strIngredient1}
-              placeholder="Vodka"
-              rows="10"
-              cols="50"
-              type="text"
-              className="new__form--ing-1"
-            />
-            <br />
+
             <label htmlFor="strIngredient2" className="new__form--name">
               2nd Ingredient
             </label>
