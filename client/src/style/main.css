@@ -639,4 +639,16 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.card-img-top {
+  display: none;
+}
+
+.card-body {
+  display: none;
+}
+
+.m-auto {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
