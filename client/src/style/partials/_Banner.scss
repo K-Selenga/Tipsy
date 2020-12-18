@@ -1,6 +1,7 @@
 @mixin button {
-  max-height: 9rem;
-  max-width: 9rem;
+  font-size: 00.8rem;
+  max-height: 4rem;
+  max-width: 4rem;
   padding-left: 0.2rem;
   padding-right: 0.4rem;
   margin-right: 0.2rem;
@@ -11,6 +12,7 @@
   flex-direction: row;
   transition: all 0.2s;
   z-index: 101;
+  text-decoration: none;
 }
 .try {
   height: 21rem;
@@ -85,13 +87,16 @@
     }
     &--btn {
       cursor: pointer;
+      margin: auto 0.5rem;
       background-color: #333333be;
       outline: none;
-      font-weight: 300;
+      font-weight: 100;
       border-radius: 1vw;
       outline: none;
       border: none;
       padding-top: 1%;
+      text-decoration: none;
+      transition: 450ms;
 
       // color: rgba(245, 245, 245, 1);
       // margin: 0;
@@ -101,11 +106,14 @@
       // width: 100%;
 
       &:hover {
-        @include button;
+        //@include button;
+        transform: scale(2);
+        outline-width: 0;
       }
       &:focus {
-        @include button;
-        background-color: #333333;
+        // @include button;
+        // background-color: #333333;
+        outline-width: 0;
       }
 
       &s {

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "../axios";
 import requests from "../request";
 import BannerMov from "./video/shaker.mp4";
-import { RiHeartAddLine, RiUserHeartLine } from "react-icons/ri";
-// import { GrFavorite } from "react-icons/gr";
 
 function Banner() {
   const [cocktails, setCocktails] = useState([]);
@@ -26,16 +24,7 @@ function Banner() {
     <header className="banner">
       <div className="banner__contents">
         <h2 className="banner__contents--title">{cocktails.strDrink}</h2>
-        <div className="banner__contents--btns">
-          <button className="banner__contents--btn">
-            <RiHeartAddLine />
-            <p>Add to Favorites</p>
-          </button>
-          <button className="banner__contents--btn">
-            <RiUserHeartLine />
-            <p>My Favorites</p>
-          </button>
-        </div>
+
         <p className="banner__contents--inst-i">
           Ingredients:
           <br />

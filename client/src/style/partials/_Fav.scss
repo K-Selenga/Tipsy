@@ -1,9 +1,37 @@
+.back {
+  height: 100%;
+  width: 30vw;
+  z-index: 100;
+  background-color: red;
+}
 .fav {
-  background-color: black;
+  margin: 1rem;
+  border-width: 5px;
+  border-style: double;
+  background-color: rgba(214, 214, 214, 0.733);
+  overscroll-behavior-y: none;
   &__poster {
-    max-width: 20vw;
+    width: 15.5rem;
+    max-height: 15.5rem;
+    object-fit: contain;
+    margin: 1rem;
+    margin-bottom: 1%;
+    max-width: 90vw;
+    border-radius: 2px;
+    box-shadow: 1px 1.2px 1.9px 1px #888888;
   }
   &__name {
-    color: whitesmoke;
+    margin-left: 1rem;
+    margin-top: 0.11%;
+    font-size: 0.6rem;
+    color: darkred;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__content {
+    color: rgb(117, 97, 97);
+    margin: 0.2% auto 0.3% 20vw;
+    font-size: 0.9rem;
+    font-weight: 100;
   }
 }

@@ -4,7 +4,7 @@ import requests from "../request";
 // import "../style/partials/Row.css";
 //rfce shortcut
 //title and container are props
-function Row({ title, fetchUrl, isLargeThumb }) {
+function Row({ title, fetchUrl }) {
   const [cocktails, setCocktails] = useState([]);
   useEffect(() => {
     async function fetchData() {
@@ -15,7 +15,7 @@ function Row({ title, fetchUrl, isLargeThumb }) {
     fetchData();
     //if you have any var which pulls data from outside you HAVE TO add it in []. exp: fetchURL
   }, [fetchUrl]);
-  console.log(cocktails);
+  //console.log(cocktails);
   return (
     <div className="row">
       <h2 className="row__title">{title}</h2>

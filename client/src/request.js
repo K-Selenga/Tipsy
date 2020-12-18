@@ -5,5 +5,6 @@ const API_KEY = "1";
 const requests = {
   fetchRandom: `/json/v1/${API_KEY}/random.php`,
   fetchTrend: `json/v1/${API_KEY}/search.php?s=margarita`,
+  fetchSearchName: `json/v1/${API_KEY}/search.php?s=`,
 };
 export default requests;

@@ -1,5 +1,9 @@
 import React from "react";
 import Logo from "../Assets/LogoW.png";
+import { Link } from "react-router-dom";
+import { RiSearchLine } from "react-icons/ri";
+import { RiUserHeartLine } from "react-icons/ri";
+import { ImLab } from "react-icons/im";
 
 function NavBar() {
   //   const [show, handleShow] = useState(false);
@@ -18,7 +22,26 @@ function NavBar() {
 
   return (
     <div className="nav">
-      <img src={Logo} alt="White Logo Tipsy" className="nav__logo" />
+      <Link to="/">
+        <img src={Logo} alt="White Logo Tipsy" className="nav__logo" />
+      </Link>
+
+      <div className="banner__contents--btns">
+        <Link to="/addSignature">
+          <button className="banner__contents--btn">
+            <ImLab />
+          </button>
+        </Link>
+        <Link to="/favlist">
+          <button className="banner__contents--btn">
+            <RiUserHeartLine />
+          </button>
+        </Link>
+      </div>
+      <Link className="nav__search" to="/search">
+        <RiSearchLine className="nav__searchicon" />
+        Search
+      </Link>
     </div>
   );
 }

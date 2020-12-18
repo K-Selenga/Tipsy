@@ -1,5 +1,15 @@
+.signature {
+  margin-left: 6rem;
+  color: rgba(245, 245, 245, 0.603);
+}
+.Your {
+  margin-left: 4.5rem;
+  color: rgba(245, 245, 245, 0.788);
+}
 .new {
+  width: 320px;
   &__bg {
+    margin-top: -2rem;
     margin-left: -10rem;
     height: 100%;
     background-repeat: no-repeat;
@@ -8,21 +18,62 @@
     z-index: -1;
   }
   &__form {
-    margin-left: 50%;
-    &--btn {
-      background-color: black;
+    opacity: 0.79;
+    padding-top: 35%;
+    & > input {
+      color: darkgreen;
+      &:focus {
+        color: black;
+
+        outline-width: 0;
+      }
+      border-radius: 2px;
+      border: 0.1px solid lightgray;
+    }
+    & > textarea {
+      color: darkgreen;
+      &:focus {
+        color: black;
+
+        outline-width: 0;
+      }
+      height: 10vh;
+      border-radius: 2px;
+      border: 0.1px solid lightgray;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-left: 45%;
+    & > button {
+      opacity: 0.9;
+      border: 0.1px solid lightgray;
+      border-radius: 5px;
+
+      background-color: whitesmoke;
+      color: rgb(150, 149, 149);
+      font-weight: 800;
+      margin-top: -0.4rem;
+      &:hover {
+        background-image: -webkit-linear-gradient(top, #f8f8f8, #cccaca);
+        color: rgb(61, 60, 60);
+      }
     }
     &--title {
-      font-size: 2.5rem;
-      color: black;
+      margin: 1rem auto auto 1rem;
+      position: absolute;
+      font-size: 2.3rem;
+      line-height: 0.8;
+      color: rgba(245, 245, 245, 0.521);
       font-weight: 500;
     }
     &--name {
-      color: whitesmoke;
-      font-weight: 400;
+      color: rgba(245, 245, 245, 0.877);
+      font-weight: 800;
       font-size: 0.8rem;
       &-i {
-        margin: 0;
+        outline-width: 0;
       }
     }
     &ing {
