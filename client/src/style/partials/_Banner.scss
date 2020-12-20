@@ -20,15 +20,6 @@
   background-color: rgba(0, 0, 0, 0.65);
 }
 .banner {
-  //background-color: #333333c0;
-  //object-fit: contain;
-  //max-height: 13rem;
-  // &__fadeBottom {
-  //   position: absolute;
-  //   bottom: 0rem;
-  //   height: 10rem;
-  //   z-index: 900 !important;
-  // }
   &__video {
     object-fit: fill;
 
@@ -97,12 +88,9 @@
       padding-top: 1%;
       text-decoration: none;
       transition: 450ms;
-
-      // color: rgba(245, 245, 245, 1);
-      // margin: 0;
       overflow: hidden;
-      max-height: 1.2rem;
-      max-width: 1.2rem;
+      max-height: 2rem;
+      max-width: 2rem;
       // width: 100%;
 
       &:hover {
@@ -121,5 +109,39 @@
         flex-direction: row;
       }
     }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .try {
+    height: 60vh;
+  }
+  .banner {
+    &__contents {
+      &--title {
+        font-size: 3rem;
+      }
+      &--inst {
+        font-size: 1.5rem;
+        width: ;
+        padding-left: 80vw;
+        &:hover {
+          background-color: none;
+        }
+      }
+    }
+  }
+
+  // .banner {
+  //   &__contents {
+  //     &--btn > svg {
+  //       height: 2rem;
+  //       width: 2rem;
+  //     }
+  //   }
+  // }
+}
+@media only screen and (min-width: 1279px) {
+  .try {
+    // height: 7vh;
   }
 }

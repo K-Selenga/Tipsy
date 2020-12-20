@@ -1,8 +1,11 @@
 .row {
+  width: 101.5vw;
+
+  overflow-x: hidden;
   &__poster {
     object-fit: contain;
     width: 7rem;
-    padding-right: 1rem;
+    // padding-right: 1rem;
     &:hover {
       transform: scale(1.1);
     }
@@ -15,7 +18,7 @@
   &__title {
     font-size: 1.3rem;
     font-weight: 400;
-    padding-left: 1rem !important;
+    // padding-left: 1rem !important;
     padding-top: 1%;
     color: whitesmoke;
   }
@@ -73,7 +76,6 @@
       opacity: 0.75;
       z-index: 200;
       &:hover {
- 
         transform: scale(1.22);
         opacity: 1;
 

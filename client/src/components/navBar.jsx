@@ -28,14 +28,10 @@ function NavBar() {
 
       <div className="banner__contents--btns">
         <Link to="/addSignature">
-          <button className="banner__contents--btn">
-            <ImLab />
-          </button>
+          <ImLab className="nav__searchicon" />
         </Link>
         <Link to="/favlist">
-          <button className="banner__contents--btn">
-            <RiUserHeartLine />
-          </button>
+          <RiUserHeartLine className="nav__searchicon" />
         </Link>
       </div>
       <Link className="nav__search" to="/search">
