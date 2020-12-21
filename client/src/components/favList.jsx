@@ -29,17 +29,18 @@ class FavList extends Component {
       this.state.FavData.length > 0 &&
       this.state.FavData.map((drink, index) => {
         return (
-          <div>
-            <div className="back"></div>
+          <div className="generalfav">
             <div className="favlist" key={drink.idDrink}>
               <div className="fav">
                 {/* <button onClick={() => history.goBack()}>Back</button> */}
-                <img
-                  className="fav__poster"
-                  src={drink.strDrinkThumb}
-                  alt={drink.strDrink}
-                />
-                <h1 className="fav__name">{drink.strDrink}</h1>
+                <div className="try3">
+                  <img
+                    className="fav__poster"
+                    src={drink.strDrinkThumb}
+                    alt={drink.strDrink}
+                  />
+                  <h1 className="fav__name">{drink.strDrink}</h1>
+                </div>
                 <div className="fav__ing">
                   <p className="fav__content">
                     <br />
@@ -53,6 +54,9 @@ class FavList extends Component {
                     {drink.strMeasure5} {drink.strIngredient5}
                     {drink.strMeasure6} {drink.strIngredient6}
                   </p>
+                </div>
+                <div className="fav__pc">
+                  <p className="fav__content2">{drink.strInstructions}</p>
                 </div>
               </div>
             </div>

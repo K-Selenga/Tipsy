@@ -1,5 +1,7 @@
 .row {
-  width: 101.5vw;
+  overflow-y: hidden;
+  width: 100vw;
+  --bs-gutter-x: 0;
 
   overflow-x: hidden;
   &__poster {
@@ -91,6 +93,25 @@
           opacity: 1;
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row {
+    &__title {
+      margin-left: 3rem;
+      font-size: 1.7rem;
+    }
+    &__thumb--list1 {
+      font-size: 1.2rem;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .row {
+    &__poster {
+      width: 11rem;
     }
   }
 }

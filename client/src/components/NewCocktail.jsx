@@ -51,7 +51,7 @@ class NewCocktail extends Component {
             Cocktail
           </h3>
           <form onSubmit={this.handleSubmit} className="new__form">
-            <label htmlFor="strDrink" className="new__form--name">
+            <label htmlFor="strDrink" className="new__form--name aa">
               Name
             </label>
             <input

@@ -15,7 +15,7 @@
   text-decoration: none;
 }
 .try {
-  height: 21rem;
+  height: 20rem;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.65);
 }
@@ -113,7 +113,7 @@
 }
 @media only screen and (min-width: 768px) {
   .try {
-    height: 60vh;
+    height: 63vh;
   }
   .banner {
     &__contents {
@@ -121,9 +121,14 @@
         font-size: 3rem;
       }
       &--inst {
+        &-i {
+          font-size: 2rem;
+          line-height: 1.1;
+        }
         font-size: 1.5rem;
-        width: ;
-        padding-left: 80vw;
+        // width: ;
+        // padding-left: 80vw;
+        margin: -15rem 1rem auto 30rem;
         &:hover {
           background-color: none;
         }
@@ -142,6 +147,46 @@
 }
 @media only screen and (min-width: 1279px) {
   .try {
-    // height: 7vh;
+    height: 42.56vh;
   }
+
+  .banner {
+    &__contents {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-height: 50vh;
+      &--title {
+        font-size: 3rem;
+        margin-left: 60rem;
+      }
+
+      &--inst {
+        display: none;
+        &-i {
+          margin-top: -10rem;
+
+          font-size: 1.4rem;
+          line-height: 1.1;
+          width: 21rem;
+          margin-left: 3rem;
+        }
+        font-size: 1.5rem;
+        // width: ;
+        // padding-left: 80vw;
+        margin: -20rem 1rem auto 58rem;
+        &:hover {
+          background-color: none;
+        }
+      }
+    }
+  }
+
+  // .banner {
+  //   &__contents {
+  //     &--btn > svg {
+  //       height: 2rem;
+  //       width: 2rem;
+  //     }
+  //   }
+  // }
 }

@@ -4,6 +4,9 @@
   z-index: 100;
   background-color: red;
 }
+.fav__pc {
+  display: none;
+}
 .fav {
   margin: 1rem;
   border-width: 5px;
@@ -33,5 +36,83 @@
     margin: 0.2% auto 0.3% 20vw;
     font-size: 0.9rem;
     font-weight: 100;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .fav__pc {
+    display: block;
+    font-size: medium;
+    margin-left: 1rem;
+    width: 90%;
+  }
+  .fav {
+    &__ing {
+      width: 90vw;
+    }
+    //   display: flex;
+    //   flex-flow: row nowrap;
+    //   &__name {
+    //     font-size: 1.6rem;
+    //     display: flex;
+    //     flex-wrap: row wrap;
+    //   }
+    &__content {
+      color: rgb(117, 97, 97);
+      margin: 0;
+      margin-top: 2rem;
+      font-size: 1rem;
+      font-weight: 100;
+      s &2 {
+        color: rgb(117, 97, 97);
+        font-weight: 300;
+        width: 90%;
+        margin-top: 2rem;
+        left: 0;
+      }
+    }
+
+    // }
+    // .try3 {
+    //   max-width: 30%;
+  }
+  .fav {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+@media only screen and (min-width: 1279px) {
+  .fav {
+    &__name {
+      font-size: 1.7rem;
+    }
+    &__ing {
+      width: 90vw;
+    }
+    //   display: flex;
+    //   flex-flow: row nowrap;
+    //   &__name {
+    //     font-size: 1.6rem;
+    //     display: flex;
+    //     flex-wrap: row wrap;
+    //   }
+    &__content {
+      color: rgb(117, 97, 97);
+      margin: 0;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      font-weight: 100;
+      &2 {
+        color: rgb(117, 97, 97);
+        font-weight: 300;
+        width: 90%;
+        margin-top: 1.6rem;
+        left: 0;
+      }
+    }
+  }
+  .fav__pc {
+    display: block;
+    font-size: 1.7rem;
+    margin-left: 1rem;
   }
 }

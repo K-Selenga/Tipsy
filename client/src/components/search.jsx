@@ -98,22 +98,25 @@ function Search() {
         return (
           <div className="result__cards" key={item.idDrink}>
             <ul className="result__card">
-              <img
-                key={item.idDrink}
-                className="result__thumb"
-                src={item.strDrinkThumb}
-                alt={item.strDrink}
-              />
-              <li className="result__name">{item.strDrink}</li>
-
-              <li className="result__ing">
-                {item.strIngredient1} {item.strMeasure1} <br />
-                {item.strIngredient2} {item.strMeasure2} <br />
-                {item.strIngredient3} {item.strMeasure3} <br />
-                {item.strIngredient4} {item.strMeasure4} <br />
-                {item.strIngredient5} {item.strMeasure5}
-              </li>
-              <li className="result__inst">{item.strInstructions}</li>
+              <div>
+                <img
+                  key={item.idDrink}
+                  className="result__thumb"
+                  src={item.strDrinkThumb}
+                  alt={item.strDrink}
+                />
+                <li className="result__name">{item.strDrink}</li>
+              </div>
+              <div className="result__pc">
+                <li className="result__ing">
+                  {item.strIngredient1} {item.strMeasure1} <br />
+                  {item.strIngredient2} {item.strMeasure2} <br />
+                  {item.strIngredient3} {item.strMeasure3} <br />
+                  {item.strIngredient4} {item.strMeasure4} <br />
+                  {item.strIngredient5} {item.strMeasure5}
+                </li>
+                <li className="result__inst">{item.strInstructions}</li>
+              </div>
             </ul>
           </div>
         );
